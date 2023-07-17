@@ -1,4 +1,4 @@
-import { Container, CssBaseline, Stack, useMediaQuery } from '@mui/material';
+import { Container, CssBaseline, Grid, Stack, useMediaQuery } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useMemo } from 'react';
 import Content from './components/Content';
@@ -6,7 +6,7 @@ import Name from './components/Name';
 
 const App = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const isWideScreen = useMediaQuery('(min-width: 750px)');
+  const isWideScreen = useMediaQuery('(min-width: 950px)');
   const theme = useMemo(
     () =>
       createTheme({
@@ -18,13 +18,17 @@ const App = () => {
   );
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
+      <CssBaseline />
+      <Container component="main" maxWidth={false} disableGutters sx={{height: "100vh"}}>
         {isWideScreen ? (
-          <Stack direction="row">
-            <Name />
-            <Content direction="row" />
-          </Stack>
+          <Grid container style={{ height: '100%' }}>
+            <Grid item style={{ flexBasis: '40%', maxWidth: '750px' }}>
+              <Name />
+            </Grid>
+            <Grid item style={{ flex: 1 }}>
+              <Content direction="row" />
+            </Grid>
+          </Grid>
         ) : (
           <Stack direction="column">
             <Name />
