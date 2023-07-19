@@ -19,21 +19,25 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container component="main" maxWidth={false} disableGutters sx={{height: "100vh"}}>
+      <Container component="main" maxWidth={false} disableGutters>
         {isWideScreen ? (
-          <Grid container style={{ height: '100%' }}>
-            <Grid item style={{ flexBasis: '40%', maxWidth: '750px' }}>
+          <Grid container sx={{ height: '100%' }}>
+            <Grid item sx={{ flexBasis: '40%', maxWidth: '700px', height: "100vh" }}>
               <Name />
             </Grid>
-            <Grid item style={{ flex: 1 }}>
-              <Content direction="row" />
+            <Grid item sx={{ flex: 1, height: "100vh" }}>
+              <Container sx={{minHeight: "100%", overflowX: "auto"}}>
+                <Content />
+              </Container>
             </Grid>
           </Grid>
         ) : (
-          <Stack direction="column">
-            <Name />
-            <Content direction="column" />
-          </Stack>
+          <Container>
+            <Stack direction="column">
+              <Name />
+              <Content />
+            </Stack>
+          </Container>
         )}
       </Container>
     </ThemeProvider>
