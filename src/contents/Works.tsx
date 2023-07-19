@@ -1,9 +1,13 @@
-import { Container } from "@mui/material"
+import { Container, Divider, Typography } from "@mui/material"
 
 const Works = () => {
   return (
-    <Container>
+    <Container disableGutters sx={{marginBlock: "10px"}}>
+      <Typography variant="h5" component="h1">Works</Typography>
+      <Divider sx={{marginBottom: "7px"}} />
+      <Container>
         Works
+      </Container>
     </Container>
   )
 }
