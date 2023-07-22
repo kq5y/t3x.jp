@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useMemo } from 'react';
 import Content from './components/Content';
 import Name from './components/Name';
+import SimpleBar from 'simplebar-react';
 
 const App = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -25,11 +26,13 @@ const App = () => {
             <Grid item sx={{ flexBasis: '40%', maxWidth: '700px', height: "100vh" }}>
               <Name />
             </Grid>
-            <Grid item sx={{ flex: 1, height: "100vh" }}>
-              <Container sx={{minHeight: "100%", overflowX: "auto"}}>
-                <Content />
-              </Container>
-            </Grid>
+              <SimpleBar style={{flex: 1, height: "100vh", overflowX: "auto"}}>
+              <Grid item>
+                <Container sx={{minHeight: "100%"}}>
+                  <Content />
+                </Container>
+              </Grid>
+            </SimpleBar>
           </Grid>
         ) : (
           <Container>
