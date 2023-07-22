@@ -41,6 +41,7 @@ const Name = () => {
                   }
                 : { display: 'none' }
             }
+            alt='ProfileIcon'
             src="https://avatars.githubusercontent.com/u/46104508"
           />
           <Typography
