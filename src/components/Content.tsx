@@ -2,6 +2,7 @@ import Profile from '../contents/Profile'
 import Skills from '../contents/Skills'
 import Works from '../contents/Works'
 import History from '../contents/History'
+import Certificate from '../contents/Certificate'
 
 const Content = () => {
   return (
@@ -9,6 +10,7 @@ const Content = () => {
       <Profile />
       <Skills />
       <Works />
+      <Certificate />
       <History />
     </>
   )
