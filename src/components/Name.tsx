@@ -9,7 +9,7 @@ const Name = () => {
       <Grid item sx={{ width: "100%" }}>
         <Stack direction={isWideScreen ? "column" : "row"} justifyContent={isWideScreen ? "center" : "flex-start"} alignItems={"center"} gap={3} ml={isWideScreen ? "inherit" : 2} mr={isWideScreen ? "inherit" : 2} >
           <Avatar sx={isWideScreen ? { width: "50%", maxWidth: "250px", aspectRatio: "1/1", height: "auto" } : {display: "none"}} src="https://avatars.githubusercontent.com/u/46104508" />
-          <Typography variant={isWideScreen ? "h3" : "h5"} component="h1">{isWideScreen ? "tksnn" : "tksnn's Portfolio"}</Typography>
+          <Typography variant={isWideScreen ? "h3" : "h5"} component="h1" sx={{fontWeight: isWideScreen ? 400 : 700}}>{isWideScreen ? "tksnn" : "tksnn's Portfolio"}</Typography>
           <Stack direction={"row"} gap={1} ml={isWideScreen ? undefined : "auto"}>
             <IconButton href="https://github.com/tkser" target="_blank" rel="noreferrer noopener">
               <SiGithub size={25} />
