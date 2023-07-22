@@ -9,7 +9,7 @@ type TableContentProps = {
 
 const TableContent = ({ key, name, data }: TableContentProps) => {
   return (
-    <TableRow key={key}>
+    <TableRow key={key} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
       <TableCell component="th" scope="row">
         {name}
       </TableCell>

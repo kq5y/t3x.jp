@@ -19,7 +19,7 @@ const Works = () => {
           <Box width={cardBoxWidth} p={1}>
             <Card style={{ height: '100%' }}>
               <CardContent>
-                <Typography component="div" variant="h5" sx={{ mb: .5 }} gutterBottom>NyanJump</Typography>
+                <Typography component="div" variant="h6" sx={{ mb: .5 }} gutterBottom>NyanJump</Typography>
                 <Stack direction="row" gap={1} rowGap={.5} sx={{ mb: .5 }} width={"100%"} flexWrap={"wrap"}>
                   <Chip label="C++" size="small" />
                   <Chip label="OpenSiv3D" size="small" variant="outlined" />
@@ -31,7 +31,7 @@ const Works = () => {
           <Box width={cardBoxWidth} p={1}>
             <Card style={{ height: '100%' }}>
               <CardContent>
-                <Typography component="div" variant="h5" sx={{ mb: .5 }} gutterBottom>GameLauncher2021</Typography>
+                <Typography component="div" variant="h6" sx={{ mb: .5 }} gutterBottom>GameLauncher2021</Typography>
                 <Stack direction="row" gap={1} rowGap={.5} sx={{ mb: .5 }} width={"100%"} flexWrap={"wrap"}>
                   <Chip label="C++" size="small" />
                   <Chip label="OpenSiv3D" size="small" variant="outlined" />
@@ -45,7 +45,7 @@ const Works = () => {
           <Box width={cardBoxWidth} p={1}>
             <Card style={{ height: '100%' }}>
               <CardContent>
-                <Typography component="div" variant="h5" sx={{ mb: .5 }} gutterBottom>W-Judge</Typography>
+                <Typography component="div" variant="h6" sx={{ mb: .5 }} gutterBottom>W-Judge</Typography>
                 <Stack direction="row" gap={1} rowGap={.5} sx={{ mb: .5 }} width={"100%"} flexWrap={"wrap"}>
                   <Chip label="Python" size="small" />
                   <Chip label="Flask" size="small" variant="outlined" />
@@ -62,7 +62,7 @@ const Works = () => {
           <Box width={cardBoxWidth} p={1}>
             <Card style={{ height: '100%' }}>
               <CardContent>
-                <Typography component="div" variant="h5" sx={{ mb: .5 }} gutterBottom>Scraping Application</Typography>
+                <Typography component="div" variant="h6" sx={{ mb: .5 }} gutterBottom>Scraping Application</Typography>
                 <Stack direction="row" gap={1} rowGap={.5} sx={{ mb: .5 }} width={"100%"} flexWrap={"wrap"}>
                   <Chip label="Python" size="small" />
                   <Chip label="Tk" size="small" variant="outlined" />
@@ -77,7 +77,7 @@ const Works = () => {
           <Box width={cardBoxWidth} p={1}>
             <Card style={{ height: '100%' }}>
               <CardContent>
-                <Typography component="div" variant="h5" sx={{ mb: .5 }} gutterBottom>Chrome Extention</Typography>
+                <Typography component="div" variant="h6" sx={{ mb: .5 }} gutterBottom>Chrome Extention</Typography>
                 <Stack direction="row" gap={1} rowGap={.5} sx={{ mb: .5 }} width={"100%"} flexWrap={"wrap"}>
                   <Chip label="TypeScript" size="small" />
                   <Chip label="React" size="small" variant="outlined" />
@@ -89,7 +89,7 @@ const Works = () => {
           <Box width={cardBoxWidth} p={1}>
             <Card style={{ height: '100%' }}>
               <CardContent>
-                <Typography component="div" variant="h5" sx={{ mb: .5 }} gutterBottom>Web 2D Game</Typography>
+                <Typography component="div" variant="h6" sx={{ mb: .5 }} gutterBottom>Web 2D Game</Typography>
                 <Stack direction="row" gap={1} rowGap={.5} sx={{ mb: .5 }} width={"100%"} flexWrap={"wrap"}>
                   <Chip label="TypeScript" size="small" />
                   <Chip label="AkashicEngine" size="small" variant="outlined" />
