@@ -27,7 +27,7 @@ const Works = () => {
       <Divider sx={{ marginBottom: '7px' }} />
       <Container ref={containerRef}>
         <Box display="flex" flexWrap="wrap">
-          <Box width={cardBoxWidth} p={1}>
+          <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
                 <Typography
@@ -55,7 +55,7 @@ const Works = () => {
               </CardContent>
             </Card>
           </Box>
-          <Box width={cardBoxWidth} p={1}>
+          <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
                 <Typography
@@ -85,7 +85,7 @@ const Works = () => {
               </CardContent>
             </Card>
           </Box>
-          <Box width={cardBoxWidth} p={1}>
+          <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
                 <Typography
@@ -118,7 +118,7 @@ const Works = () => {
               </CardContent>
             </Card>
           </Box>
-          <Box width={cardBoxWidth} p={1}>
+          <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
                 <Typography
@@ -149,7 +149,7 @@ const Works = () => {
               </CardContent>
             </Card>
           </Box>
-          <Box width={cardBoxWidth} p={1}>
+          <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
                 <Typography
@@ -177,7 +177,7 @@ const Works = () => {
               </CardContent>
             </Card>
           </Box>
-          <Box width={cardBoxWidth} p={1}>
+          <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
                 <Typography

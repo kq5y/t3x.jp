@@ -46,7 +46,7 @@ const Skills = () => {
       <Divider sx={{ marginBottom: '7px' }} />
       <Container>
         <TableContainer component={Paper}>
-          <Table sx={{ width: '100%', minWidth: '330px' }} size="small">
+          <Table sx={{ width: '100%', minWidth: '300px' }} size="small">
             <TableBody>
               <TableContent
                 key={'lang'}
@@ -111,7 +111,7 @@ const Skills = () => {
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiScikitlearn size={15} />
-                      scikit Learn
+                      sk-learn
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiSiv3d size={15} />
