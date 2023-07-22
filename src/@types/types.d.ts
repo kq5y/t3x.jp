@@ -1,1 +1,1 @@
-type SideContent = "profile" | "skills" | "works" | "history";
+type SideContent = 'profile' | 'skills' | 'works' | 'history'
