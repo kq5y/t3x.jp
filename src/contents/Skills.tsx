@@ -60,11 +60,11 @@ const Skills = () => {
                     scikit Learn
                   </Stack>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
-                    <SiSiv3d size={15} color="#ffffff" />
+                    <SiSiv3d size={15} />
                     OpenSiv3D
                   </Stack>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
-                    <SiAkashicEngine size={15} color="#ffffff" />
+                    <SiAkashicEngine size={15} />
                     AkashicEngine
                   </Stack>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>

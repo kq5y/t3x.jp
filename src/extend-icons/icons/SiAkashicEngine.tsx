@@ -1,6 +1,6 @@
 import BaseIcon from "../baseIcon"
 
-const SiAkashicEngine = ({color = "#ce0d0d", size = 24, ...others}: IconProps) => {
+const SiAkashicEngine = ({color = "currentColor", size = 24, ...others}: IconProps) => {
   return (
     <BaseIcon
       iconTitle={"AkashicEngine"}

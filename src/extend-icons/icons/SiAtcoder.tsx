@@ -1,6 +1,6 @@
 import BaseIcon from "../baseIcon"
 
-const SiAtCoder = ({color = "#ffffff", size = 24, ...others}: IconProps) => {
+const SiAtCoder = ({color = "currentColor", size = 24, ...others}: IconProps) => {
   return (
     <BaseIcon
       iconTitle={"AtCoder"}

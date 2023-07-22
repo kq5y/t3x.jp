@@ -1,6 +1,6 @@
 import BaseIcon from "../baseIcon"
 
-const SiSiv3d = ({color = "#0595ef", size = 24, ...others}: IconProps) => {
+const SiSiv3d = ({color = "currentColor", size = 24, ...others}: IconProps) => {
   return (
     <BaseIcon
       iconTitle={"Siv3d"}
