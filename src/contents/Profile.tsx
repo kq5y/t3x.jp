@@ -12,6 +12,7 @@ const Profile = () => {
             <TableBody>
               <TableContent key={"name"} name={"Name"} data={"Shu Takahashi"} />
               <TableContent key={"nickname"} name={"Nickname"} data={"tksnn, tkser"} />
+              <TableContent key={"email"} name={"Email"} data={"tkser.edu☻gmail.com"} />
               <TableContent key={"birthday"} name={"Birthday"} data={"2004/12/10"} />
               <TableContent key={"birthplace"} name={"Birthplace"} data={"Chiba, Japan"} />
               <TableContent key={"location"} name={"Location"} data={"Nagano, Japan"} />
