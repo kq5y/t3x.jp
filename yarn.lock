@@ -324,6 +324,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@icons-pack/react-simple-icons@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@icons-pack/react-simple-icons/-/react-simple-icons-8.0.1.tgz#333c7fe2fea098e06e16eedc875d990f64cf64a5"
+  integrity sha512-lCdPSp+EFJKDabwQ16pQsTJKViwGa8naoYAnL0IpxQvl7E1CeQ7Z84BbJWhIustrrdNIZwcyuKg+ClPi7BXFWw==
+
 "@mui/base@5.0.0-beta.7":
   version "5.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-beta.7.tgz#01cb99ac098af0ba989c7abc1474e3291c29414f"
