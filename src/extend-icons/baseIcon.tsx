@@ -3,14 +3,15 @@ type BaseIconProps = {
   hex: string;
   iconPath: string;
   size?: number;
+  viewBox?: string;
   others?: any;
 }
 
-const BaseIcon = ({ iconTitle, hex, iconPath, size = 256, ...others }: BaseIconProps) => {
+const BaseIcon = ({ iconTitle, hex, iconPath, size = 256, viewBox = "0 0 256 256", ...others }: BaseIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 256 256"
+      viewBox={viewBox}
       width={size}
       height={size}
       fill={hex}
