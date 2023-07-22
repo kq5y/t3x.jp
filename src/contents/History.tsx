@@ -12,15 +12,15 @@ const History = () => {
           <Box p={.5}>
             <Card>
               <CardContent style={{paddingBlock: "5px"}}>
-                <Typography component="div" variant="h6">
+                <Typography component="div" variant="subtitle1">
                   <Stack direction={"row"} gap={1}>
-                    <div style={{minWidth: "75px"}}>
+                    <div style={{minWidth: "60px"}}>
                       2020/4
                     </div>
-                    <div style={{minWidth: "12px"}}>
+                    <div style={{minWidth: "10px"}}>
                       ~
                     </div>
-                    <div style={{minWidth: "73px"}}>
+                    <div style={{minWidth: "60px"}}>
                       2023/3
                     </div>
                     <div style={{marginLeft: "10px"}}>
@@ -36,15 +36,15 @@ const History = () => {
           <Box p={.5}>
             <Card>
               <CardContent style={{paddingBlock: "5px"}}>
-                <Typography component="div" variant="h6">
+                <Typography component="div" variant="subtitle1">
                   <Stack direction={"row"} gap={1}>
-                    <div style={{minWidth: "75px"}}>
+                    <div style={{minWidth: "60px"}}>
                       2023/4
                     </div>
-                    <div style={{minWidth: "12px"}}>
+                    <div style={{minWidth: "10px"}}>
                       ~
                     </div>
-                    <div style={{minWidth: "73px"}}>
+                    <div style={{minWidth: "60px"}}>
                     </div>
                     <div style={{ marginLeft: "10px" }}>
                       {["信","州","大","学","工","学","部","電","子","情","報","シ","ス","テ","ム","工","学","科"].map((v) => (
