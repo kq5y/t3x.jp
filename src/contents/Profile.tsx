@@ -1,21 +1,5 @@
-import { Container, Divider, Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material"
-
-type TableContentProps = {
-  key: string,
-  name: string,
-  data: string
-}
-
-const TableContent = ({key, name, data}: TableContentProps) => {
-  return (
-    <TableRow key={key}>
-      <TableCell component="th" scope="row">
-        {name}
-      </TableCell>
-      <TableCell align="right">{data}</TableCell>
-    </TableRow>
-  );
-}
+import { Container, Divider, Paper, Table, TableBody, TableContainer, Typography } from "@mui/material"
+import TableContent from "../components/TableContent"
 
 const Profile = () => {
   return (
@@ -29,9 +13,9 @@ const Profile = () => {
               <TableContent key={"name"} name={"Name"} data={"Shu Takahashi"} />
               <TableContent key={"nickname"} name={"Nickname"} data={"tksnn, tkser"} />
               <TableContent key={"birthday"} name={"Birthday"} data={"2004/12/10"} />
-              <TableContent key={"birthplace"} name={"Birth Place"} data={"Chiba, Japan"} />
-              <TableContent key={"liveplace"} name={"Live Place"} data={"Nagano, Japan"} />
-              <TableContent key={"hobby"} name={"Hobby"} data={"Programming, Playing Games, NicoNicoDouga"} />
+              <TableContent key={"birthplace"} name={"Birthplace"} data={"Chiba, Japan"} />
+              <TableContent key={"location"} name={"Location"} data={"Nagano, Japan"} />
+              <TableContent key={"like"} name={"Like"} data={"Programming, Playing Games, NicoNicoDouga"} />
             </TableBody>
           </Table>
         </TableContainer>
