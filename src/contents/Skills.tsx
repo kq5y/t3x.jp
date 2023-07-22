@@ -46,7 +46,7 @@ const Skills = () => {
       <Divider sx={{ marginBottom: '7px' }} />
       <Container>
         <TableContainer component={Paper}>
-          <Table sx={{ width: '100%', minWidth: '400px' }} size="small">
+          <Table sx={{ width: '100%', minWidth: '330px' }} size="small">
             <TableBody>
               <TableContent
                 key={'lang'}

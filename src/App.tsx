@@ -31,11 +31,11 @@ const App = () => {
           <Grid container sx={{ height: '100%' }}>
             <Grid
               item
-              sx={{ flexBasis: '40%', maxWidth: '700px', height: '100vh' }}
+              sx={{ flexBasis: '40%', maxWidth: '700px', height: '100dvh' }}
             >
               <Name />
             </Grid>
-            <SimpleBar style={{ flex: 1, height: '100vh', overflowX: 'auto' }}>
+            <SimpleBar style={{ flex: 1, height: '100dvh', overflowX: 'auto' }}>
               <Grid item>
                 <Container sx={{ minHeight: '100%' }}>
                   <Content />
@@ -44,7 +44,7 @@ const App = () => {
             </SimpleBar>
           </Grid>
         ) : (
-          <SimpleBar style={{ height: '100vh', overflowX: 'auto' }}>
+          <SimpleBar style={{ height: '100dvh', overflowX: 'auto' }}>
             <Container>
               <Stack direction="column">
                 <Name />
