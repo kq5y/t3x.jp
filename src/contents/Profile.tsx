@@ -18,7 +18,7 @@ const Profile = () => {
       <Divider sx={{ marginBottom: '7px' }} />
       <Container>
         <TableContainer component={Paper}>
-          <Table sx={{ width: '100%', minWidth: '350px' }} size="small">
+          <Table sx={{ width: '100%', minWidth: '300px' }} size="small">
             <TableBody>
               <TableContent key={'name'} name={'Name'} data={'Shu Takahashi'} />
               <TableContent
