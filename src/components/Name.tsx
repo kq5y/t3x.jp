@@ -6,8 +6,8 @@ const Name = () => {
     <Grid container alignItems={"center"} justifyContent={"center"} direction={"column"} style={{ height: '100%' }} marginTop={1} marginBottom={1}>
       <Grid item sx={{ width: "100%" }}>
         <Stack direction={isWideScreen ? "column" : "row"} justifyContent={isWideScreen ? "center" : "flex-start"} alignItems={"center"} gap={3} marginLeft={isWideScreen ? "inherit" : 2} >
-          <Avatar sx={isWideScreen ? { width: "50%", maxWidth: "250px", aspectRatio: "1/1", height: "auto" } : {}} src="https://avatars.githubusercontent.com/u/46104508" />
-          <Typography variant={isWideScreen ? "h3" : "h4"} component="h1">tksnn</Typography>
+          <Avatar sx={isWideScreen ? { width: "50%", maxWidth: "250px", aspectRatio: "1/1", height: "auto" } : {display: "none"}} src="https://avatars.githubusercontent.com/u/46104508" />
+          <Typography variant={isWideScreen ? "h3" : "h5"} component="h1">{isWideScreen ? "tksnn" : "tksnn's Portfolio"}</Typography>
         </Stack>
       </Grid>
     </Grid>

@@ -11,10 +11,10 @@ const Skills = () => {
       <Divider sx={{marginBottom: "7px"}} />
       <Container>
         <TableContainer component={Paper}>
-          <Table sx={{ width: "100%", minWidth: "350px" }} size="small">
+          <Table sx={{ width: "100%", minWidth: "400px" }} size="small">
             <TableBody>
               <TableContent key={"lang"} name={"Language"} data={(
-                <Stack direction="row" gap={1.5} justifyContent={"end"}>
+                <Stack direction="row" gap={1.5} justifyContent={"end"} flexWrap={"wrap"}>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
                     <SiCplusplus size={15} />
                     C++
@@ -38,7 +38,7 @@ const Skills = () => {
                 </Stack>
               )} />
               <TableContent key={"framework"} name={"Framework"} data={(
-                <Stack direction="row" gap={1.5} justifyContent={"end"}>
+                <Stack direction="row" gap={1.5} justifyContent={"end"} flexWrap={"wrap"}>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
                     <SiReact size={15} />
                     React
@@ -74,7 +74,7 @@ const Skills = () => {
                 </Stack>
               )} />
               <TableContent key={"environment"} name={"Environment"} data={(
-                <Stack direction="row" gap={1.5} justifyContent={"end"}>
+                <Stack direction="row" gap={1.5} justifyContent={"end"} flexWrap={"wrap"}>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
                     <SiGit size={15} />
                     Git
@@ -86,7 +86,7 @@ const Skills = () => {
                 </Stack>
               )} />
               <TableContent key={"database"} name={"Database"} data={(
-                <Stack direction="row" gap={1.5} justifyContent={"end"}>
+                <Stack direction="row" gap={1.5} justifyContent={"end"} flexWrap={"wrap"}>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
                     <SiMysql size={15} />
                     MySQL
@@ -98,7 +98,7 @@ const Skills = () => {
                 </Stack>
               )} />
               <TableContent key={"cloud"} name={"Cloud"} data={(
-                <Stack direction="row" gap={1.5} justifyContent={"end"}>
+                <Stack direction="row" gap={1.5} justifyContent={"end"} flexWrap={"wrap"}>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
                     <SiOracle size={15} />
                     OCI
@@ -118,7 +118,7 @@ const Skills = () => {
                 </Stack>
               )} />
               <TableContent key={"cloud"} name={"Cloud"} data={(
-                <Stack direction="row" gap={1.5} justifyContent={"end"}>
+                <Stack direction="row" gap={1.5} justifyContent={"end"} flexWrap={"wrap"}>
                   <Stack direction="row" alignItems={"center"} gap={0.5}>
                     <SiWindows11 size={15} />
                     Windows
