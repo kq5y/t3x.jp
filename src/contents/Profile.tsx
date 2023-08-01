@@ -2,12 +2,16 @@ import {
   Container,
   Divider,
   Paper,
+  Stack,
   Table,
   TableBody,
   TableContainer,
   Typography
 } from '@mui/material'
 import TableContent from '../components/TableContent'
+import { SiNiconico } from "react-icons/si"
+import { RiComputerFill } from 'react-icons/ri'
+import { IoLogoGameControllerB } from 'react-icons/io'
 
 const Profile = () => {
   return (
@@ -49,7 +53,28 @@ const Profile = () => {
               <TableContent
                 key={'like'}
                 name={'Like'}
-                data={'Programming, Playing Games, NicoNicoDouga'}
+                data={
+                  <Stack
+                    direction="row"
+                    gap={1.5}
+                    rowGap={0.5}
+                    justifyContent={'end'}
+                    flexWrap={'wrap'}
+                  >
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <RiComputerFill size={15} />
+                      Programming
+                    </Stack>
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <IoLogoGameControllerB size={15} />
+                      Game
+                    </Stack>
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <SiNiconico size={15} />
+                      Nicovideo
+                    </Stack>
+                  </Stack>
+                }
               />
             </TableBody>
           </Table>

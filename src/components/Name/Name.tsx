@@ -1,4 +1,4 @@
-import { SiGithub, SiKaggle } from '@icons-pack/react-simple-icons'
+import { SiGithub, SiKaggle } from 'react-icons/si'
 import {
   Avatar,
   Grid,
