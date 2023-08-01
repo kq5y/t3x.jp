@@ -8,7 +8,7 @@ import {
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { useMemo } from 'react'
 import Content from './components/Content'
-import Name from './components/Name'
+import Name from './components/Name/Name'
 import SimpleBar from 'simplebar-react'
 
 const App = () => {
