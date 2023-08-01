@@ -25,7 +25,7 @@ const History = () => {
                     </div>
                     <div style={{marginLeft: "10px"}}>
                       {["早", "稲", "田", "高", "等", "学", "校"].map((v) => (
-                        <span>{v}</span>
+                        <span style={{marginLeft: "-10px"}}>{"\u2004"+v+"\u2004"}</span>
                       ))}
                     </div>
                   </Stack>
@@ -48,7 +48,7 @@ const History = () => {
                     </div>
                     <div style={{ marginLeft: "10px" }}>
                       {["信","州","大","学","工","学","部","電","子","情","報","シ","ス","テ","ム","工","学","科"].map((v) => (
-                        <span>{v}</span>
+                        <span style={{marginLeft: "-10px"}}>{"\u2004"+v+"\u2004"}</span>
                       ))}
                     </div>
                   </Stack>

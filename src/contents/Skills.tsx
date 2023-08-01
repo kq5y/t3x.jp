@@ -32,7 +32,7 @@ import {
   SiUbuntu,
   SiVercel,
   SiWindows11
-} from '@icons-pack/react-simple-icons'
+} from 'react-icons/si'
 import TableContent from '../components/TableContent'
 import { SiSiv3d } from '../extend-icons'
 import SiAkashicEngine from '../extend-icons/icons/SiAkashicEngine'
@@ -203,8 +203,8 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'cloud'}
-                name={'Cloud'}
+                key={'os'}
+                name={'OS'}
                 data={
                   <Stack
                     direction="row"

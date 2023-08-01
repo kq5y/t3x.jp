@@ -1,4 +1,4 @@
-import { SiGithub, SiKaggle } from '@icons-pack/react-simple-icons'
+import { SiGithub, SiKaggle } from 'react-icons/si'
 import {
   Avatar,
   Grid,
@@ -7,7 +7,8 @@ import {
   Typography,
   useMediaQuery
 } from '@mui/material'
-import SiAtCoder from '../extend-icons/icons/SiAtcoder'
+import SiAtCoder from '../../extend-icons/icons/SiAtcoder'
+import styled from './Name.module.scss'
 
 const Name = () => {
   const isWideScreen = useMediaQuery('(min-width: 950px)')
@@ -31,18 +32,14 @@ const Name = () => {
           mr={isWideScreen ? 'inherit' : 2}
         >
           <Avatar
+            className={styled.icon}
             sx={
               isWideScreen
-                ? {
-                    width: '50%',
-                    maxWidth: '250px',
-                    aspectRatio: '1/1',
-                    height: 'auto'
-                  }
+                ? { display: 'block'}
                 : { display: 'none' }
             }
             alt='ProfileIcon'
-            src="https://avatars.githubusercontent.com/u/46104508"
+            src="profile.webp"
           />
           <Typography
             variant={isWideScreen ? 'h3' : 'h5'}
