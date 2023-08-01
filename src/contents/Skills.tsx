@@ -203,8 +203,8 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'cloud'}
-                name={'Cloud'}
+                key={'os'}
+                name={'OS'}
                 data={
                   <Stack
                     direction="row"
