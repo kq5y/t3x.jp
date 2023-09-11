@@ -1,6 +1,6 @@
 import BaseIcon from '../baseIcon'
 
-const SiAkashicEngine = ({
+export const SiAkashicEngine = ({
   color = 'currentColor',
   size = 24,
   ...others
@@ -17,5 +17,3 @@ const SiAkashicEngine = ({
     />
   )
 }
-
-export default SiAkashicEngine

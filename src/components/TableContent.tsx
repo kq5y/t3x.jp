@@ -2,15 +2,15 @@ import { TableRow, TableCell } from '@mui/material'
 import { ReactNode } from 'react'
 
 type TableContentProps = {
-  key: string
+  row_key: string
   name: string
   data: ReactNode
 }
 
-const TableContent = ({ key, name, data }: TableContentProps) => {
+const TableContent = ({ row_key, name, data }: TableContentProps) => {
   return (
     <TableRow
-      key={key}
+      key={row_key}
       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
     >
       <TableCell component="th" scope="row">

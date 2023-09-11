@@ -7,7 +7,7 @@ import {
   Typography,
   useMediaQuery
 } from '@mui/material'
-import SiAtCoder from '../../extend-icons/icons/SiAtcoder'
+import { SiAtCoder, SiSignate } from '../../extend-icons'
 import styled from './Name.module.scss'
 
 const Name = () => {
@@ -66,6 +66,13 @@ const Name = () => {
               rel="noreferrer noopener"
             >
               <SiKaggle size={25} />
+            </IconButton>
+            <IconButton
+              href="https://signate.jp/users/114309"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <SiSignate size={25} />
             </IconButton>
             <IconButton
               href="https://atcoder.jp/users/tksnn"

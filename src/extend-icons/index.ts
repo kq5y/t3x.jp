@@ -1,1 +1,4 @@
-export { default as SiSiv3d } from './icons/SiSiv3d'
+export * from './icons/SiAkashicEngine'
+export * from './icons/SiAtcoder'
+export * from './icons/SiSignate'
+export * from './icons/SiSiv3d'

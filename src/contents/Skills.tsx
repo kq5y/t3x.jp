@@ -22,9 +22,11 @@ import {
   SiJavascript,
   SiMacos,
   SiMysql,
+  SiNextdotjs,
   SiOracle,
   SiPostgresql,
   SiPython,
+  SiPytorch,
   SiReact,
   SiRedis,
   SiScikitlearn,
@@ -34,8 +36,7 @@ import {
   SiWindows11
 } from 'react-icons/si'
 import TableContent from '../components/TableContent'
-import { SiSiv3d } from '../extend-icons'
-import SiAkashicEngine from '../extend-icons/icons/SiAkashicEngine'
+import { SiSiv3d, SiAkashicEngine } from '../extend-icons'
 
 const Skills = () => {
   return (
@@ -49,7 +50,7 @@ const Skills = () => {
           <Table sx={{ width: '100%', minWidth: '300px' }} size="small">
             <TableBody>
               <TableContent
-                key={'lang'}
+                row_key={'lang'}
                 name={'Language'}
                 data={
                   <Stack
@@ -83,7 +84,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'framework'}
+                row_key={'framework'}
                 name={'Framework'}
                 data={
                   <Stack
@@ -96,6 +97,10 @@ const Skills = () => {
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiReact size={15} />
                       React
+                    </Stack>
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <SiNextdotjs size={15} />
+                      Next.js
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiFlask size={15} />
@@ -111,7 +116,11 @@ const Skills = () => {
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiScikitlearn size={15} />
-                      sk-learn
+                      scikit-learn
+                    </Stack>
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <SiPytorch size={15} />
+                      PyTorch
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiSiv3d size={15} />
@@ -129,7 +138,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'environment'}
+                row_key={'environment'}
                 name={'Environment'}
                 data={
                   <Stack
@@ -151,7 +160,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'database'}
+                row_key={'database'}
                 name={'Database'}
                 data={
                   <Stack
@@ -173,7 +182,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'cloud'}
+                row_key={'cloud'}
                 name={'Cloud'}
                 data={
                   <Stack
@@ -203,7 +212,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'os'}
+                row_key={'os'}
                 name={'OS'}
                 data={
                   <Stack

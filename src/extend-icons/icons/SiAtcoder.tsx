@@ -1,6 +1,6 @@
 import BaseIcon from '../baseIcon'
 
-const SiAtCoder = ({
+export const SiAtCoder = ({
   color = 'currentColor',
   size = 24,
   ...others
@@ -18,5 +18,3 @@ const SiAtCoder = ({
     />
   )
 }
-
-export default SiAtCoder
