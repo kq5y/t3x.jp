@@ -24,34 +24,34 @@ const Profile = () => {
         <TableContainer component={Paper}>
           <Table sx={{ width: '100%', minWidth: '270px' }} size="small">
             <TableBody>
-              <TableContent key={'name'} name={'Name'} data={'Shu Takahashi'} />
+              <TableContent row_key={'name'} name={'Name'} data={'Shu Takahashi'} />
               <TableContent
-                key={'nickname'}
+                row_key={'nickname'}
                 name={'Nickname'}
                 data={'tksnn, tkser'}
               />
               <TableContent
-                key={'email'}
+                row_key={'email'}
                 name={'Email'}
                 data={'tkser.edu█gmail.com'}
               />
               <TableContent
-                key={'birthday'}
+                row_key={'birthday'}
                 name={'Birthday'}
                 data={'2004/12/10'}
               />
               <TableContent
-                key={'birthplace'}
+                row_key={'birthplace'}
                 name={'Birthplace'}
                 data={'Chiba, Japan'}
               />
               <TableContent
-                key={'location'}
+                row_key={'location'}
                 name={'Location'}
                 data={'Nagano, Japan'}
               />
               <TableContent
-                key={'like'}
+                row_key={'like'}
                 name={'Like'}
                 data={
                   <Stack

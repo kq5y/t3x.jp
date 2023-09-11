@@ -48,7 +48,7 @@ const Skills = () => {
           <Table sx={{ width: '100%', minWidth: '300px' }} size="small">
             <TableBody>
               <TableContent
-                key={'lang'}
+                row_key={'lang'}
                 name={'Language'}
                 data={
                   <Stack
@@ -82,7 +82,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'framework'}
+                row_key={'framework'}
                 name={'Framework'}
                 data={
                   <Stack
@@ -128,7 +128,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'environment'}
+                row_key={'environment'}
                 name={'Environment'}
                 data={
                   <Stack
@@ -150,7 +150,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'database'}
+                row_key={'database'}
                 name={'Database'}
                 data={
                   <Stack
@@ -172,7 +172,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'cloud'}
+                row_key={'cloud'}
                 name={'Cloud'}
                 data={
                   <Stack
@@ -202,7 +202,7 @@ const Skills = () => {
                 }
               />
               <TableContent
-                key={'os'}
+                row_key={'os'}
                 name={'OS'}
                 data={
                   <Stack
