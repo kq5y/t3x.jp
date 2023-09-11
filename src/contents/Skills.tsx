@@ -25,6 +25,7 @@ import {
   SiOracle,
   SiPostgresql,
   SiPython,
+  SiPytorch,
   SiReact,
   SiRedis,
   SiScikitlearn,
@@ -110,7 +111,11 @@ const Skills = () => {
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiScikitlearn size={15} />
-                      sk-learn
+                      scikit-learn
+                    </Stack>
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <SiPytorch size={15} />
+                      PyTorch
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiSiv3d size={15} />
