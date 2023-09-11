@@ -1,6 +1,6 @@
 import BaseIcon from '../baseIcon'
 
-const SiSiv3d = ({
+export const SiSiv3d = ({
   color = 'currentColor',
   size = 24,
   ...others
@@ -17,5 +17,3 @@ const SiSiv3d = ({
     />
   )
 }
-
-export default SiSiv3d

@@ -34,8 +34,7 @@ import {
   SiWindows11
 } from 'react-icons/si'
 import TableContent from '../components/TableContent'
-import { SiSiv3d } from '../extend-icons'
-import SiAkashicEngine from '../extend-icons/icons/SiAkashicEngine'
+import { SiSiv3d, SiAkashicEngine } from '../extend-icons'
 
 const Skills = () => {
   return (
