@@ -22,6 +22,7 @@ import {
   SiJavascript,
   SiMacos,
   SiMysql,
+  SiNextdotjs,
   SiOracle,
   SiPostgresql,
   SiPython,
@@ -96,6 +97,10 @@ const Skills = () => {
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiReact size={15} />
                       React
+                    </Stack>
+                    <Stack direction="row" alignItems={'center'} gap={0.5}>
+                      <SiNextdotjs size={15} />
+                      Next.js
                     </Stack>
                     <Stack direction="row" alignItems={'center'} gap={0.5}>
                       <SiFlask size={15} />
