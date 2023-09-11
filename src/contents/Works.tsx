@@ -134,6 +134,68 @@ const Works = () => {
           <Box width={cardBoxWidth} p={.5}>
             <Card style={{ height: '100%' }}>
               <CardContent>
+                <Stack
+                  direction="row"
+                >
+                  <Typography
+                    component="div"
+                    variant="h6"
+                    sx={{ mb: 0.5 }}
+                    gutterBottom
+                  >
+                    Titanic Checker
+                  </Typography>
+                  <div style={{ flexGrow: 1 }}></div>
+                  <IconButton
+                    href="https://titanic-checker.pages.dev"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ marginBottom: '4px' }}
+                  >
+                    <RiHashtag size={20} />
+                  </IconButton>
+                  <IconButton
+                    href="https://github.com/tkser/titanic-checker-front"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ marginBottom: '4px' }}
+                    title='Frontend'
+                  >
+                    <SiGithub size={20} />
+                  </IconButton>
+                  <IconButton
+                    href="https://github.com/tkser/titanic-checker-api"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ marginBottom: '4px' }}
+                    title='Backend'
+                  >
+                    <SiGithub size={20} />
+                  </IconButton>
+                </Stack>
+                <Stack
+                  direction="row"
+                  gap={1}
+                  rowGap={0.5}
+                  sx={{ mb: 0.5 }}
+                  width={'100%'}
+                  flexWrap={'wrap'}
+                >
+                  <Chip label="TypeScript" size="small" />
+                  <Chip label="Python" size="small" />
+                  <Chip label="React" size="small" variant="outlined" />
+                  <Chip label="Cloudflare" size="small" variant="outlined" />
+                  <Chip label="FastAPI" size="small" variant="outlined" />
+                </Stack>
+                <Typography variant="body2">
+                  TitanicDatasetを用いた機械学習モデルの精度を確認するためのWebアプリケーション
+                </Typography>
+              </CardContent>
+            </Card>
+          </Box>
+          <Box width={cardBoxWidth} p={.5}>
+            <Card style={{ height: '100%' }}>
+              <CardContent>
                 <Typography
                   component="div"
                   variant="h6"
