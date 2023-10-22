@@ -61,6 +61,7 @@ const Competitions = () => {
                     flexWrap={'wrap'}
                   >
                     <Chip label="2023/8" size="small" />
+                    <Chip label="SIGNATE" size="small" variant="outlined" />
                     <Chip label="テーブル" size="small" variant="outlined" />
                     <Chip label="42th" size="small" variant="outlined" />
                   </Stack>
