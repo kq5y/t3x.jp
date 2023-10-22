@@ -46,7 +46,12 @@ const Name = () => {
             component="h1"
             sx={{ fontWeight: isWideScreen ? 400 : 700 }}
           >
-            {isWideScreen ? 'tksnn' : "tksnn's Portfolio"}
+            {isWideScreen ? 'tksnn' : (
+              <Stack direction={'row'} alignItems={'center'} gap={2}>
+                <Avatar className={styled.miniicon} alt='ProfileIcon' src="profile.webp" />
+                tksnn's Portfolio
+              </Stack>
+            )}
           </Typography>
           <Stack
             direction={'row'}
