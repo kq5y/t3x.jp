@@ -3,6 +3,7 @@ import Skills from '../contents/Skills'
 import Works from '../contents/Works'
 import History from '../contents/History'
 import Certificate from '../contents/Certificate'
+import Competitions from '../contents/Competitions'
 
 const Content = () => {
   return (
@@ -10,6 +11,7 @@ const Content = () => {
       <Profile />
       <Skills />
       <Works />
+      <Competitions />
       <Certificate />
       <History />
     </>

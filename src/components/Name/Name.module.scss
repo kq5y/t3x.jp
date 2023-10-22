@@ -9,3 +9,22 @@
         -moz-drag-over: none;
     }
 }
+
+.miniicon {
+    max-height: 50px !important;
+    aspect-ratio: 1/1 !important;
+    width: auto !important;
+    user-select: none !important;
+    img{
+        -webkit-user-drag: none;
+        -moz-drag-over: none;
+    }
+}
+
+.snsbox {
+    a {
+        padding: 4px !important;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+}

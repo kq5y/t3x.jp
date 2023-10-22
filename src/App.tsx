@@ -28,21 +28,21 @@ const App = () => {
       <CssBaseline />
       <Container component="main" maxWidth={false} disableGutters>
         {isWideScreen ? (
-          <Grid container sx={{ height: '100%' }}>
-            <Grid
-              item
-              sx={{ flexBasis: '40%', maxWidth: '700px', height: '100dvh' }}
-            >
-              <Name />
-            </Grid>
-            <SimpleBar style={{ flex: 1, height: '100dvh', overflowX: 'auto' }}>
-              <Grid item>
-                <Container sx={{ minHeight: '100%' }}>
-                  <Content />
-                </Container>
+          <Container sx={{ minHeight: '100%', maxWidth: '1920px' }} disableGutters maxWidth={false}>
+            <Grid container sx={{ height: '100%' }}>
+              <Grid
+                item
+                sx={{ flexBasis: '40%', maxWidth: '700px', height: '100dvh' }}
+              >
+                <Name />
               </Grid>
-            </SimpleBar>
-          </Grid>
+              <SimpleBar style={{ flex: 1, height: '100dvh', overflowX: 'auto' }}>
+                <Grid item>
+                  <Content />
+                </Grid>
+              </SimpleBar>
+            </Grid>
+          </Container>
         ) : (
           <SimpleBar style={{ height: '100dvh', overflowX: 'auto' }}>
             <Container>
