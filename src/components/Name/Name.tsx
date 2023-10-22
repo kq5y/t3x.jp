@@ -1,6 +1,7 @@
 import { SiGithub, SiKaggle, SiTwitter } from 'react-icons/si'
 import {
   Avatar,
+  Box,
   Grid,
   IconButton,
   Stack,
@@ -47,16 +48,20 @@ const Name = () => {
             sx={{ fontWeight: isWideScreen ? 400 : 700 }}
           >
             {isWideScreen ? 'tksnn' : (
-              <Stack direction={'row'} alignItems={'center'} gap={2}>
+              <Stack direction={'row'} alignItems={'center'} gap={2} width={'min-content'}>
                 <Avatar className={styled.miniicon} alt='ProfileIcon' src="profile.webp" />
                 tksnn's Portfolio
               </Stack>
             )}
           </Typography>
-          <Stack
-            direction={'row'}
-            gap={1}
+          <Box
+            display={"flex"}
+            justifyContent={isWideScreen ? 'center' : 'flex-end'}
+            flexWrap={'wrap'}
+            columnGap={isWideScreen ? 1 : 0.5}
+            rowGap={0}
             ml={isWideScreen ? undefined : 'auto'}
+            className={styled.snsbox}
           >
             <IconButton
               href="https://twitter.com/tksnnnnnnnnn"
@@ -93,7 +98,7 @@ const Name = () => {
             >
               <SiAtCoder size={25} />
             </IconButton>
-          </Stack>
+          </Box>
         </Stack>
       </Grid>
     </Grid>
