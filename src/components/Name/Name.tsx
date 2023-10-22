@@ -1,4 +1,4 @@
-import { SiGithub, SiKaggle } from 'react-icons/si'
+import { SiGithub, SiKaggle, SiTwitter } from 'react-icons/si'
 import {
   Avatar,
   Grid,
@@ -53,6 +53,13 @@ const Name = () => {
             gap={1}
             ml={isWideScreen ? undefined : 'auto'}
           >
+            <IconButton
+              href="https://twitter.com/tksnnnnnnnnn"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <SiTwitter size={25} />
+            </IconButton>
             <IconButton
               href="https://github.com/tkser"
               target="_blank"
