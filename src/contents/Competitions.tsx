@@ -63,7 +63,55 @@ const Competitions = () => {
                     <Chip label="2023/8" size="small" />
                     <Chip label="SIGNATE" size="small" variant="outlined" />
                     <Chip label="テーブル" size="small" variant="outlined" />
-                    <Chip label="42th" size="small" variant="outlined" />
+                    <Chip label="🥈42th" size="small" variant="outlined" />
+                  </Stack>
+              </CardContent>
+            </Card>
+          </Box>
+          <Box width={cardBoxWidth} p={.5}>
+            <Card style={{ height: '100%' }}>
+              <CardContent>
+                <Stack
+                  direction="row"
+                >
+                  <Typography
+                    component="div"
+                    variant="h6"
+                    sx={{ mb: 0.5 }}
+                    gutterBottom
+                  >
+                    technopro-food-package
+                  </Typography>
+                  <div style={{ flexGrow: 1 }}></div>
+                  <IconButton
+                    href="https://signate.jp/competitions/1106"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ marginBottom: '4px' }}
+                  >
+                    <SiSignate size={20} />
+                  </IconButton>
+                  <IconButton
+                    href="https://github.com/tkser/technopro-food-package"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style={{ marginBottom: '4px' }}
+                  >
+                    <SiGithub size={20} />
+                  </IconButton>
+                </Stack>
+                <Stack
+                    direction="row"
+                    gap={1}
+                    rowGap={0.5}
+                    sx={{ mb: 0.5 }}
+                    width={'100%'}
+                    flexWrap={'wrap'}
+                  >
+                    <Chip label="2023/9" size="small" />
+                    <Chip label="SIGNATE" size="small" variant="outlined" />
+                    <Chip label="画像" size="small" variant="outlined" />
+                    <Chip label="🥈11th" size="small" variant="outlined" />
                   </Stack>
               </CardContent>
             </Card>
