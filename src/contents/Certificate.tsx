@@ -32,7 +32,7 @@ const Certificate = () => {
                   width={'100%'}
                   flexWrap={'wrap'}
                 >
-                  <Chip label="2021/3" size="small" />
+                  <Chip label="2021/02" size="small" />
                   <Chip label="IPA" size="small" variant="outlined" />
                   <Chip label="情報処理" size="small" variant="outlined" />
                 </Stack>
@@ -53,8 +53,29 @@ const Certificate = () => {
                   width={'100%'}
                   flexWrap={'wrap'}
                 >
-                  <Chip label="2021/6" size="small" />
+                  <Chip label="2021/06" size="small" />
                   <Chip label="英語" size="small" variant="outlined" />
+                </Stack>
+              </CardContent>
+            </Card>
+          </Box>
+          <Box width={cardBoxWidth} p={.5}>
+            <Card style={{ height: '100%' }}>
+              <CardContent>
+                <Typography component="div" variant="h6" gutterBottom>
+                  応用情報技術者試験 合格
+                </Typography>
+                <Stack
+                  direction="row"
+                  gap={1}
+                  rowGap={0.5}
+                  sx={{ mb: 0.5 }}
+                  width={'100%'}
+                  flexWrap={'wrap'}
+                >
+                  <Chip label="2023/10" size="small" />
+                  <Chip label="IPA" size="small" variant="outlined" />
+                  <Chip label="情報処理" size="small" variant="outlined" />
                 </Stack>
               </CardContent>
             </Card>
