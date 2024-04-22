@@ -1,0 +1,8 @@
+node_modules/
+.next/
+dist/
+public/
+yarn.lock
+tsconfig.json
+*.cjs
+*.mjs
