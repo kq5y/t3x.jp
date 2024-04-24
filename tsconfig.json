@@ -18,7 +18,9 @@
             }
         ],
         "paths": {
-            "@/*": ["./src/*"]
+            "@/*": ["./src/*"],
+            "@posts/*": ["./_posts/*"],
+            "@data/*": ["./_data/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "dist/types/**/*.ts"],

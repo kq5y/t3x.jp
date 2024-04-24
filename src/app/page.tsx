@@ -1,11 +1,76 @@
+import { SiAtCoder, SiSignate } from "@/app/extend-icons";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiKaggle } from "react-icons/si";
+
+function SNSItem(props: { link: LinkItem; children: React.ReactNode }) {
+    return (
+        <Link
+            target="_blank"
+            rel="noreferrer"
+            className="relative size-10 max-h-[40px] max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase transition-all active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            href={props.link.url}
+            title={props.link.name}
+        >
+            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">{props.children}</span>
+        </Link>
+    );
+}
+
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-                <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200  lg:p-4 dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:dark:bg-zinc-800/30">
-                    portfolio
-                </p>
+        <div>
+            <h1 className="my-4 text-2xl font-semibold">Profile</h1>
+            <div className="rounded-lg bg-white p-4 dark:bg-[#0b0e14]">
+                <div className="flex items-center gap-4">
+                    <img src="img/icon.webp" alt="icon" className="size-12 rounded-full" />
+                    <p className="text-lg font-semibold">tksnn</p>
+                    <div className="ml-auto flex">
+                        <SNSItem
+                            link={{
+                                name: "Twitter",
+                                url: "https://twitter.com/tksnnnnnnnnn"
+                            }}
+                        >
+                            <FaXTwitter size={20} />
+                        </SNSItem>
+                        <SNSItem
+                            link={{
+                                name: "GitHub",
+                                url: "https://github.com/tksnnx"
+                            }}
+                        >
+                            <FaGithub size={20} />
+                        </SNSItem>
+                        <SNSItem
+                            link={{
+                                name: "Kaggle",
+                                url: "https://www.kaggle.com/tksnnn"
+                            }}
+                        >
+                            <SiKaggle size={20} />
+                        </SNSItem>
+                        <SNSItem
+                            link={{
+                                name: "Signate",
+                                url: "https://signate.jp/users/114309"
+                            }}
+                        >
+                            <SiSignate size={20} />
+                        </SNSItem>
+                        <SNSItem
+                            link={{
+                                name: "AtCoder",
+                                url: "https://atcoder.jp/users/tksnn"
+                            }}
+                        >
+                            <SiAtCoder size={20} />
+                        </SNSItem>
+                    </div>
+                </div>
             </div>
-        </main>
+            <div></div>
+        </div>
     );
 }
