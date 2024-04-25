@@ -1,10 +1,10 @@
 import Header from "@/app/components/Header";
 import { Providers } from "@/app/components/Providers";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { M_PLUS_Rounded_1c } from "next/font/google";
 import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = M_PLUS_Rounded_1c({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "tksnn's Portfolio"

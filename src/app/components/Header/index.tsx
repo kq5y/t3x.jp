@@ -44,26 +44,26 @@ export default function Header() {
                 </span>
             </button>
             <div
-                className={`fixed left-0 top-0 z-10 size-full bg-neutral-100/90 dark:bg-neutral-900/90
+                className={`fixed left-0 top-0 z-10 size-full bg-neutral-100/90 font-semibold dark:bg-neutral-900/90
                  ${isMenuOpen ? "block" : "hidden"}`}
                 onClick={handleMenuToggle}
             >
                 <ul className="flex h-full flex-col items-center justify-center text-3xl">
                     <li className="group relative mb-4">
                         <Link href="/">Profile</Link>
-                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-500 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
+                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-300 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
                     </li>
                     <li className="group relative mb-4">
                         <Link href="/works">Works</Link>
-                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-500 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
+                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-300 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
                     </li>
                     <li className="group relative mb-4">
                         <Link href="/history">History</Link>
-                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-500 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
+                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-300 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
                     </li>
                     <li className="group relative mb-4">
                         <Link href="/posts">Posts</Link>
-                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-500 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
+                        <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-300 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
                     </li>
                 </ul>
             </div>
