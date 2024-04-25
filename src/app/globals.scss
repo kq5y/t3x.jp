@@ -43,6 +43,28 @@ html.dark .shiki span {
     text-decoration: var(--shiki-dark-text-decoration) !important;
 }
 
+html {
+    .post-container {
+        .remark-mermaid.remark-mermaid-dark {
+            display: none;
+        }
+        .remark-mermaid.remark-mermaid-neutral {
+            display: block;
+        }
+    }
+}
+
+html.dark {
+    .post-container {
+        .remark-mermaid.remark-mermaid-neutral {
+            display: none;
+        }
+        .remark-mermaid.remark-mermaid-dark {
+            display: block;
+        }
+    }
+}
+
 .post-container {
     h1 {
         padding-bottom: 4px;

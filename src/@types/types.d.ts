@@ -64,3 +64,11 @@ declare module "remark-link-card" {
     function rlc(options?: Readonly<Options> | null | undefined): undefined;
     export default rlc;
 }
+
+declare module "@southball/remark-mermaid" {
+    type Options = {
+        themes?: string[];
+    };
+    function remarkMermaid(options?: Readonly<Options> | null | undefined): undefined;
+    export default remarkMermaid;
+}

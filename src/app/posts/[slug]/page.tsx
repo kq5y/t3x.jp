@@ -1,5 +1,6 @@
 import { getAllPosts, getPostBySlug } from "@/app/lib/posts";
 import rehypeShiki from "@shikijs/rehype";
+import remarkMermaid from "@southball/remark-mermaid";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,6 +59,9 @@ async function markdownToHtml(markdown: string) {
     const result = await unified()
         .use(remarkParse)
         .use(remarkMath)
+        .use(remarkMermaid, {
+            themes: ["neutral", "dark"]
+        })
         .use(remarkLinkCard, {
             cache: false,
             shortenUrl: true
