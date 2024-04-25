@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 export default function WorksPage() {
     return (
         <div>
-            <h1 className="my-4 text-2xl font-semibold">Works</h1>
+            <h1 className="my-4 text-3xl font-semibold">Works</h1>
             <div>
                 {works.map((item, index) => (
                     <Item key={index} item={item} />

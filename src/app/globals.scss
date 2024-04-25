@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    max-width: 800px;
+    max-width: min(800px, 95%);
     margin: 0 auto;
 }
 

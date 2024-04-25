@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 export default function HistoryPage() {
     return (
         <div>
-            <h1 className="my-4 text-2xl font-semibold">History</h1>
+            <h1 className="my-4 text-3xl font-semibold">History</h1>
             <div>
                 {data
                     .sort((a, b) => {

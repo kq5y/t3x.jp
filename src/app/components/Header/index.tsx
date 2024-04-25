@@ -48,7 +48,7 @@ export default function Header() {
                  ${isMenuOpen ? "block" : "hidden"}`}
                 onClick={handleMenuToggle}
             >
-                <ul className="flex h-full flex-col items-center justify-center text-2xl">
+                <ul className="flex h-full flex-col items-center justify-center text-3xl">
                     <li className="group relative mb-4">
                         <Link href="/">Profile</Link>
                         <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-500 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>

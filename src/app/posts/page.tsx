@@ -10,7 +10,7 @@ export default function BlogPage() {
     const posts = getAllPosts();
     return (
         <div>
-            <h1 className="my-4 text-2xl font-semibold">Posts</h1>
+            <h1 className="my-4 text-3xl font-semibold">Posts</h1>
             <div>
                 {posts.map((post, index) => (
                     <div key={index} className="mx-2 flex">
