@@ -1,12 +1,15 @@
 import { getAllPosts, getPostBySlug } from "@/app/lib/posts";
 import rehypeShiki from "@shikijs/rehype";
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { jsx, jsxs } from "react/jsx-runtime";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeExternalLinks from "rehype-external-links";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
+import rehypeReact from "rehype-react";
 import rehypeSlug from "rehype-slug";
-import rehypeStringify from "rehype-stringify";
 import remarkBreaks from "remark-breaks";
 import remarkGfm from "remark-gfm";
 import remarkLinkCard from "remark-link-card";
@@ -20,6 +23,36 @@ type BlogContentPageProps = {
         slug: string;
     };
 };
+
+function CustomImage({
+    src,
+    width,
+    height,
+    alt,
+    ...props
+}: {
+    src: string;
+    width?: number;
+    height?: number;
+    alt: string;
+}) {
+    if (width && height) {
+        return <Image src={src} width={width} height={height} alt={alt} {...props} />;
+    }
+    return <Image src={src} fill alt={alt} {...props} />;
+}
+
+function CustomLink({ href, children, ...props }: { href: string; children: React.ReactNode }) {
+    return href.startsWith("/") ? (
+        <Link href={href} {...props}>
+            {children}
+        </Link>
+    ) : (
+        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+            {children}
+        </a>
+    );
+}
 
 async function markdownToHtml(markdown: string) {
     const result = await unified()
@@ -42,15 +75,20 @@ async function markdownToHtml(markdown: string) {
                 dark: "ayu-dark"
             }
         })
-        .use(rehypeExternalLinks, {
-            target: "_blank",
-            rel: ["noopener", "noreferrer"]
-        })
         .use(rehypeSlug)
         .use(rehypeAutolinkHeadings)
-        .use(rehypeStringify)
+        .use(rehypeReact, {
+            Fragment: React.Fragment,
+            createElement: React.createElement,
+            components: {
+                a: CustomLink,
+                img: CustomImage
+            },
+            jsx,
+            jsxs
+        } as never)
         .process(markdown);
-    return result.toString();
+    return result.result;
 }
 
 export function generateMetadata({ params }: BlogContentPageProps): Metadata {
@@ -64,7 +102,7 @@ export function generateMetadata({ params }: BlogContentPageProps): Metadata {
 export default async function BlogContentPage({ params }: BlogContentPageProps) {
     const slug = params.slug;
     const { meta, content } = getPostBySlug(slug);
-    const html = await markdownToHtml(content);
+    const Content = await markdownToHtml(content);
     return (
         <div>
             <div className="my-4">
@@ -83,7 +121,7 @@ export default async function BlogContentPage({ params }: BlogContentPageProps) 
                     </div>
                 )}
             </div>
-            <div dangerouslySetInnerHTML={{ __html: html }} className="post-container" />
+            <div className="post-container">{Content}</div>
         </div>
     );
 }

@@ -25,7 +25,7 @@ export default function Home() {
             <h1 className="my-4 text-3xl font-semibold">Profile</h1>
             <div className="rounded-lg bg-[#f5f9ff] p-4 dark:bg-[#0b0e14]">
                 <div className="flex items-center gap-4">
-                    <Image priority src="img/icon.webp" alt="icon" className="rounded-full" width={48} height={48} />
+                    <Image priority src="/img/icon.webp" alt="icon" className="rounded-full" width={48} height={48} />
                     <p className="text-lg font-semibold">tksnn</p>
                     <div className="ml-auto flex">
                         <SNSItem
