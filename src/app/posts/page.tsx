@@ -15,7 +15,7 @@ export default function BlogPage() {
                 {posts.map((post, index) => (
                     <div key={index} className="mx-4 my-1 flex">
                         <div className="flex-1 pb-8 pt-0.5">
-                            <h3 className="flex gap-x-1.5 font-semibold">{post.meta.title}</h3>
+                            <h2 className="flex gap-x-1.5 font-semibold">{post.meta.title}</h2>
                             <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{post.meta.excerpt}</p>
                             <div className="mt-1 flex gap-x-2">
                                 <Link

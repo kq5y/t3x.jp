@@ -10,7 +10,7 @@ function Item(props: ItemProps) {
     return (
         <div className="mx-4 my-1 flex">
             <div className="flex-1 pb-8 pt-0.5">
-                <h3 className="flex gap-x-1.5 font-semibold">{item.title}</h3>
+                <h2 className="flex gap-x-1.5 font-semibold">{item.title}</h2>
                 {item.tags && (
                     <div className="mt-1 flex gap-x-1.5">
                         {item.tags.map((tag, index) => (

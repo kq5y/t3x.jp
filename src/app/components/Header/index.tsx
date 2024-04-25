@@ -25,6 +25,7 @@ export default function Header() {
         <header className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-end bg-transparent px-4">
             <button
                 type="button"
+                aria-label="toggle theme"
                 onClick={handleThemeChange}
                 className="relative size-10 max-h-[40px] max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase transition-all active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             >
@@ -34,6 +35,7 @@ export default function Header() {
             </button>
             <button
                 type="button"
+                aria-label="toggle menu"
                 onClick={handleMenuToggle}
                 className="relative z-20 size-10 max-h-[40px] max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase transition-all active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             >

@@ -18,8 +18,8 @@ function Item(props: ItemProps) {
                 </div>
             </div>
             <div className="flex-1 pb-8 pt-0.5">
-                <h4 className="text-sm text-gray-500 dark:text-neutral-400">{item.category}</h4>
-                <h3 className="flex gap-x-1.5 font-semibold">{item.title}</h3>
+                <p className="text-sm text-gray-500 dark:text-neutral-400">{item.category}</p>
+                <h2 className="flex gap-x-1.5 font-semibold">{item.title}</h2>
                 {item.description && (
                     <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{item.description}</p>
                 )}
