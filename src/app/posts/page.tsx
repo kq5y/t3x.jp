@@ -13,18 +13,27 @@ export default function BlogPage() {
             <h1 className="my-4 text-2xl font-semibold">Posts</h1>
             <div>
                 {posts.map((post, index) => (
-                    <div key={index} className="mx-4 my-1 flex">
-                        <div className="flex-1 pb-8 pt-0.5">
-                            <h2 className="flex gap-x-1.5 font-semibold">{post.meta.title}</h2>
-                            <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{post.meta.excerpt}</p>
-                            <div className="mt-1 flex gap-x-2">
-                                <Link
-                                    href={`/posts/${post.meta.slug}`}
-                                    className="text-sm text-gray-600 underline dark:text-neutral-400"
-                                >
-                                    Read more
-                                </Link>
-                            </div>
+                    <div key={index} className="mx-2 flex">
+                        <div className="flex-1 pb-1 pt-0.5">
+                            <Link
+                                href={`/posts/${post.meta.slug}`}
+                                className="block rounded p-4 hover:bg-gray-100 dark:hover:bg-neutral-800"
+                            >
+                                <h2 className="flex gap-x-1.5 font-semibold">{post.meta.title}</h2>
+                                {post.meta.tags && (
+                                    <div className="mt-1 flex gap-x-1.5">
+                                        {post.meta.tags.map((tag, index) => (
+                                            <span
+                                                key={index}
+                                                className="rounded bg-gray-200 px-1.5 py-0.5 text-xs text-gray-600 dark:bg-neutral-700 dark:text-neutral-400"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
+                                <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{post.meta.excerpt}</p>
+                            </Link>
                         </div>
                     </div>
                 ))}

@@ -38,7 +38,7 @@ async function markdownToHtml(markdown: string) {
         .use(rehypeKatex)
         .use(rehypeShiki, {
             themes: {
-                light: "github-light",
+                light: "catppuccin-frappe",
                 dark: "ayu-dark"
             }
         })
@@ -71,8 +71,15 @@ export default async function BlogContentPage({ params }: BlogContentPageProps) 
                 <h1 className="text-3xl font-semibold">{meta.title}</h1>
                 <span className="text-sm text-gray-500 dark:text-neutral-400">{meta.date}</span>
                 {meta.tags && (
-                    <div className="flex flex-wrap gap-2">
-                        <span className="text-sm text-gray-600 dark:text-neutral-400">{meta.tags.join(", ")}</span>
+                    <div className="mt-1 flex gap-x-1.5">
+                        {meta.tags.map((tag, index) => (
+                            <span
+                                key={index}
+                                className="rounded bg-gray-200 px-1.5 py-0.5 text-xs text-gray-600 dark:bg-neutral-700 dark:text-neutral-400"
+                            >
+                                {tag}
+                            </span>
+                        ))}
                     </div>
                 )}
             </div>

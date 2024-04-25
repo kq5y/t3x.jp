@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <div>
             <h1 className="my-4 text-2xl font-semibold">Profile</h1>
-            <div className="rounded-lg bg-white p-4 dark:bg-[#0b0e14]">
+            <div className="rounded-lg bg-[#f5f9ff] p-4 dark:bg-[#0b0e14]">
                 <div className="flex items-center gap-4">
                     <img src="img/icon.webp" alt="icon" className="size-12 rounded-full" loading="lazy" />
                     <p className="text-lg font-semibold">tksnn</p>
