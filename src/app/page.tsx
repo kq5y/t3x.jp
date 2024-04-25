@@ -1,9 +1,24 @@
-import { SiAtCoder, SiSignate } from "@/app/extend-icons";
+import { SiAkashicEngine, SiAtCoder, SiSignate, SiSiv3d } from "@/app/extend-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { SiKaggle } from "react-icons/si";
+import {
+    SiCplusplus,
+    SiCsharp,
+    SiDotnet,
+    SiElectron,
+    SiFastapi,
+    SiFlask,
+    SiKaggle,
+    SiNextdotjs,
+    SiPython,
+    SiPytorch,
+    SiReact,
+    SiScikitlearn,
+    SiTypescript,
+    SiUnity
+} from "react-icons/si";
 
 function SNSItem(props: { link: LinkItem; children: React.ReactNode }) {
     return (
@@ -72,7 +87,85 @@ export default function Home() {
                 </div>
             </div>
             <div>
-                <h2 className="my-4 text-xl font-semibold">Skills</h2>
+                <h2 className="my-4 text-2xl font-semibold">Skills</h2>
+                <div className="ml-4 flex flex-col flex-wrap gap-4">
+                    <div className="flex flex-col gap-2">
+                        <h3 className="flex items-center gap-2 text-xl font-semibold">
+                            <SiCplusplus />
+                            <span className="ml">C++</span>
+                        </h3>
+                        <div className="ml-4 flex flex-row flex-wrap gap-4 text-lg">
+                            <span className="flex items-center gap-2">
+                                <SiSiv3d />
+                                OpenSiv3D
+                            </span>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <h3 className="flex items-center gap-2 text-xl font-semibold">
+                            <SiPython />
+                            <span className="ml">Python</span>
+                        </h3>
+                        <div className="ml-4 flex flex-row flex-wrap gap-4 text-lg">
+                            <span className="flex items-center gap-2">
+                                <SiFlask />
+                                Flask
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiFastapi />
+                                FastAPI
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiScikitlearn />
+                                scikit-learn
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiPytorch />
+                                PyTorch
+                            </span>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <h3 className="flex items-center gap-2 text-xl font-semibold">
+                            <SiTypescript />
+                            <span className="ml">Typescript</span>
+                        </h3>
+                        <div className="ml-4 flex flex-row flex-wrap gap-4 text-lg">
+                            <span className="flex items-center gap-2">
+                                <SiReact />
+                                React
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiNextdotjs />
+                                Next.js
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiElectron />
+                                Electron
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiAkashicEngine />
+                                AkashicEngine
+                            </span>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <h3 className="flex items-center gap-2 text-xl font-semibold">
+                            <SiCsharp />
+                            <span className="ml">C#</span>
+                        </h3>
+                        <div className="ml-4 flex flex-row flex-wrap gap-4 text-lg">
+                            <span className="flex items-center gap-2">
+                                <SiDotnet />
+                                WPF
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiUnity />
+                                Unity
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
