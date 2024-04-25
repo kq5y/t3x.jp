@@ -2,6 +2,7 @@
 title: "test"
 excerpt: "test desc"
 date: "2022-07-01"
+hidden: true
 tags:
     - "test"
     - "test2"

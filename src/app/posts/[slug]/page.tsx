@@ -127,7 +127,7 @@ export default async function BlogContentPage({ params }: BlogContentPageProps) 
 }
 
 export function generateStaticParams() {
-    const posts = getAllPosts();
+    const posts = getAllPosts(true);
     return posts.map((post) => ({
         slug: post.meta.slug
     }));

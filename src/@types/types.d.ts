@@ -5,6 +5,7 @@ type PostMeta = {
     slug: string;
     excerpt: string;
     date: string;
+    hidden?: boolean;
     tags?: string[];
 };
 

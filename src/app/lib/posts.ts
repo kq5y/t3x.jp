@@ -21,11 +21,12 @@ export function getPostBySlug(slug: string): Post {
     };
 }
 
-export function getAllPosts(): Post[] {
+export function getAllPosts(hidden = false): Post[] {
     const slugs = fs.readdirSync(postsDirectory);
     const posts = slugs
         .filter((slug) => slug.endsWith(".md"))
         .map((slug) => getPostBySlug(slug))
+        .filter((post) => hidden || !post.meta.hidden)
         .sort((a, b) => {
             if (a.meta.date < b.meta.date) {
                 return 1;

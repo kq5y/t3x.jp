@@ -17,7 +17,7 @@ export default function BlogPage() {
                         <div className="flex-1 pb-1 pt-0.5">
                             <Link
                                 href={`/posts/${post.meta.slug}`}
-                                className="block rounded p-4 hover:bg-gray-100 dark:hover:bg-neutral-800"
+                                className="block rounded p-4 hover:bg-gray-200 dark:hover:bg-neutral-800"
                             >
                                 <h2 className="flex gap-x-1.5 font-semibold">{post.meta.title}</h2>
                                 {post.meta.tags && (
@@ -37,6 +37,7 @@ export default function BlogPage() {
                         </div>
                     </div>
                 ))}
+                {posts.length === 0 && <p>No posts found.</p>}
             </div>
         </div>
     );
