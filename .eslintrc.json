@@ -33,7 +33,6 @@
                 "component": true,
                 "html": false
             }
-        ],
-        "@next/next/no-img-element": "off"
+        ]
     }
 }

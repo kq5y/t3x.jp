@@ -1,4 +1,5 @@
 import { SiAtCoder, SiSignate } from "@/app/extend-icons";
+import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -24,7 +25,7 @@ export default function Home() {
             <h1 className="my-4 text-3xl font-semibold">Profile</h1>
             <div className="rounded-lg bg-[#f5f9ff] p-4 dark:bg-[#0b0e14]">
                 <div className="flex items-center gap-4">
-                    <img src="img/icon.webp" alt="icon" className="size-12 rounded-full" loading="lazy" />
+                    <Image priority src="img/icon.webp" alt="icon" className="rounded-full" width={48} height={48} />
                     <p className="text-lg font-semibold">tksnn</p>
                     <div className="ml-auto flex">
                         <SNSItem
@@ -70,7 +71,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div>
+                <h2 className="my-4 text-xl font-semibold">Skills</h2>
+            </div>
         </div>
     );
 }
