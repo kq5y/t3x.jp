@@ -43,7 +43,7 @@ function CustomImage({
 }
 
 function CustomLink({ href, children, ...props }: { href: string; children: React.ReactNode }) {
-    return href.startsWith("/") ? (
+    return href.startsWith("/") || href.startsWith("#") ? (
         <Link href={href} {...props}>
             {children}
         </Link>
