@@ -1,11 +1,11 @@
 ---
-title: "test"
-excerpt: "test desc"
+title: "テスト用ページ"
+excerpt: "これはテスト用のページです。"
 date: "2022-07-01"
 hidden: true
 tags:
-    - "test"
-    - "test2"
+    - "test_tag"
+    - "test2_tag"
 ---
 
 https://www.npmjs.com/package/rollup-preserve-directives
