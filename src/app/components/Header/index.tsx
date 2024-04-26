@@ -22,7 +22,7 @@ export default function Header() {
     }, []);
     if (!mounted) return null;
     return (
-        <header className="fixed left-0 top-0 z-50 flex h-16 w-full items-center justify-end bg-transparent px-4">
+        <header className="fixed right-4 top-4 z-50 bg-transparent">
             <button
                 type="button"
                 aria-label="toggle theme"
