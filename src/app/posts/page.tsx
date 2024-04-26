@@ -17,9 +17,9 @@ export default function BlogPage() {
                         <div className="flex-1 pb-1 pt-0.5">
                             <Link
                                 href={`/posts/${post.meta.slug}`}
-                                className="block rounded p-4 hover:bg-gray-200 dark:hover:bg-neutral-800"
+                                className="block rounded p-2 hover:bg-gray-200 dark:hover:bg-neutral-800"
                             >
-                                <h2 className="flex gap-x-1.5 font-semibold">{post.meta.title}</h2>
+                                <h2 className="flex gap-x-1.5 text-lg font-semibold">{post.meta.title}</h2>
                                 {post.meta.tags && (
                                     <div className="mt-1 flex gap-x-1.5">
                                         {post.meta.tags.map((tag, index) => (
