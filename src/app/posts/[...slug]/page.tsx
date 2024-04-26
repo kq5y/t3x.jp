@@ -21,7 +21,7 @@ import { unified } from "unified";
 
 type BlogContentPageProps = {
     params: {
-        slug: string;
+        slug: string[];
     };
 };
 
@@ -97,7 +97,7 @@ async function markdownToHtml(markdown: string) {
 
 export function generateMetadata({ params }: BlogContentPageProps): Metadata {
     const slug = params.slug;
-    const { meta } = getPostBySlug(slug);
+    const { meta } = getPostBySlug(slug.join("/"));
     return {
         title: `${meta.title} - tksnn's Portfolio`
     };
@@ -105,11 +105,12 @@ export function generateMetadata({ params }: BlogContentPageProps): Metadata {
 
 export default async function BlogContentPage({ params }: BlogContentPageProps) {
     const slug = params.slug;
-    const { meta, content } = getPostBySlug(slug);
+    const { meta, content } = getPostBySlug(slug.join("/"));
     const Content = await markdownToHtml(content);
     return (
         <div>
             <div className="my-4">
+                <span className="text-sm text-gray-500 dark:text-neutral-400">{meta.slug}</span>
                 <h1 className="text-3xl font-semibold">{meta.title}</h1>
                 <span className="text-sm text-gray-500 dark:text-neutral-400">{meta.date}</span>
                 {meta.tags && (
@@ -133,6 +134,6 @@ export default async function BlogContentPage({ params }: BlogContentPageProps) 
 export function generateStaticParams() {
     const posts = getAllPosts(true);
     return posts.map((post) => ({
-        slug: post.meta.slug
+        slug: post.meta.slug.split("/")
     }));
 }

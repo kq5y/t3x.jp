@@ -1,6 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
-import { resolve } from "path";
+import { join, resolve } from "path";
 
 const postsDirectory = resolve(process.cwd(), "_posts");
 
@@ -22,10 +22,20 @@ export function getPostBySlug(slug: string): Post {
 }
 
 export function getAllPosts(hidden = false): Post[] {
-    const slugs = fs.readdirSync(postsDirectory);
+    const slugs = fs.readdirSync(postsDirectory, {
+        withFileTypes: true,
+        recursive: true
+    });
     const posts = slugs
-        .filter((slug) => slug.endsWith(".md"))
-        .map((slug) => getPostBySlug(slug))
+        .filter((file) => file.isFile() && file.name.endsWith(".md"))
+        .map((file) => {
+            const slug = join(file.path, file.name)
+                .replace(postsDirectory, "")
+                .replace(".md", "")
+                .replaceAll("\\", "/")
+                .substring(1);
+            return getPostBySlug(slug);
+        })
         .filter((post) => hidden || !post.meta.hidden)
         .sort((a, b) => {
             if (a.meta.date < b.meta.date) {
