@@ -55,6 +55,28 @@ function CustomLink({ href, children, ...props }: { href: string; children: Reac
     );
 }
 
+function CustomH1({ children, ...props }: { children: React.ReactNode }) {
+    return (
+        <h1 {...props}>
+            <span className="mr-1.5 select-none align-bottom text-2xl -tracking-widest text-gray-500 dark:text-neutral-400">
+                #
+            </span>
+            {children}
+        </h1>
+    );
+}
+
+function CustomH2({ children, ...props }: { children: React.ReactNode }) {
+    return (
+        <h2 {...props}>
+            <span className="mr-1.5 select-none align-bottom text-xl -tracking-widest text-gray-500 dark:text-neutral-400">
+                ##
+            </span>
+            {children}
+        </h2>
+    );
+}
+
 async function markdownToHtml(markdown: string) {
     const result = await unified()
         .use(remarkParse)
@@ -86,7 +108,9 @@ async function markdownToHtml(markdown: string) {
             createElement: React.createElement,
             components: {
                 a: CustomLink,
-                img: CustomImage
+                img: CustomImage,
+                h1: CustomH1,
+                h2: CustomH2
             },
             jsx,
             jsxs
