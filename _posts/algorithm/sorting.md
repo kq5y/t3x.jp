@@ -106,7 +106,7 @@ def merge_sort(A, l, r):
 -   最悪計算量 $ O(n^2) $
 -   平均計算量 $ O(n\log{n}) $
 
-再帰的に、partitionを用いて配列を2分し、quickSortを行う。
+再帰的に、partitionを用いて最後の要素を基準にし配列を2分し、quickSortを行う。
 
 ```python
 def partition(A, p, r):
@@ -124,4 +124,22 @@ def quick_sort(A, p, r):
         q = partition(A, p, r)
         quick_sort(A, p, q - 1)
         quick_sort(A, q + 1, r)
+```
+
+## 計数ソート
+
+-   最悪計算量 $ O(n+k) $
+
+各要素の出現個数をカウントし、それに基づいてそれを用いて順々にソートする。
+
+```python
+def counting_sort(A, B, k):
+    C = [0] * (k + 1)
+    for j in range(len(A)):
+        C[A[j]] += 1
+    for i in range(1, k + 1):
+        C[i] += C[i - 1]
+    for j in range(len(A) - 1, -1, -1):
+        B[C[A[j]] - 1] = A[j]
+        C[A[j]] -= 1
 ```
