@@ -1,11 +1,30 @@
 [
     {
+        "title": "nicoarch",
+        "description": "ニコニコ動画の動画やメタデータ、コメントをアーカイブするツール",
+        "links": [
+            {
+                "name": "Github",
+                "url": "https://github.com/tksnnx/nicoarch"
+            },
+            {
+                "name": "GitHub(Frontend)",
+                "url": "https://github.com/tksnnx/nicoarch-app"
+            },
+            {
+                "name": "GitHub(Worker)",
+                "url": "https://github.com/tksnnx/nicoarch-worker"
+            }
+        ],
+        "tags": ["TypeScript", "Remix", "Redis", "MongoDB", "Python", "Docker", "NGINX"]
+    },
+    {
         "title": "next-note",
         "description": "ノートを取るためのWebアプリケーション",
         "links": [
             {
                 "name": "Link",
-                "url": "https://note.t3xn.net"
+                "url": "https://note.t3x.jp"
             },
             {
                 "name": "GitHub",
@@ -24,7 +43,7 @@
             },
             {
                 "name": "GitHub",
-                "url": "https://github.com/tkser/tksnnx.github.io"
+                "url": "https://github.com/tksnnx/t3x.jp"
             }
         ],
         "tags": ["TypeScript", "Next.js", "Cloudflare"]
@@ -39,11 +58,11 @@
             },
             {
                 "name": "GitHub(Frontend)",
-                "url": "https://github.com/tkser/titanic-checker-front"
+                "url": "https://github.com/tksnnx/titanic-checker-front"
             },
             {
                 "name": "GitHub(Backend)",
-                "url": "https://github.com/tkser/titanic-checker-api"
+                "url": "https://github.com/tksnnx/titanic-checker-api"
             }
         ],
         "tags": ["TypeScript", "React.js", "Python", "FastAPI", "Cloudflare"]
