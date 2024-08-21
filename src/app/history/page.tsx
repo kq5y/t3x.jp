@@ -24,7 +24,7 @@ function Item(props: ItemProps) {
                     <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{item.description}</p>
                 )}
                 {item.links && (
-                    <div className="mt-1 flex gap-x-2">
+                    <div className="mt-1 flex flex-wrap gap-x-2">
                         {item.links.map((link, index) => (
                             <a
                                 key={index}

@@ -42,7 +42,7 @@ export default function Home() {
                 <div className="flex items-center gap-4">
                     <Image priority src="/img/icon.webp" alt="icon" className="rounded-full" width={48} height={48} />
                     <p className="text-lg font-semibold">tksnn</p>
-                    <div className="ml-auto flex">
+                    <div className="ml-auto flex flex-wrap justify-end">
                         <SNSItem
                             link={{
                                 name: "Twitter",

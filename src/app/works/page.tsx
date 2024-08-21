@@ -9,11 +9,11 @@ function Item(props: ItemProps) {
     const item = props.item;
     return (
         <div className="mx-2 flex">
-            <div className="flex-1 pb-1 pt-0.5">
+            <div className="w-full flex-1 pb-1 pt-0.5">
                 <div className="block rounded p-4 hover:bg-gray-100 dark:hover:bg-neutral-800">
                     <h2 className="flex gap-x-1.5 font-semibold">{item.title}</h2>
                     {item.tags && (
-                        <div className="mt-1 flex gap-x-1.5">
+                        <div className="mt-1 flex flex-wrap gap-1.5">
                             {item.tags.map((tag, index) => (
                                 <span
                                     key={index}
@@ -28,7 +28,7 @@ function Item(props: ItemProps) {
                         <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{item.description}</p>
                     )}
                     {item.links && (
-                        <div className="mt-1 flex gap-x-2">
+                        <div className="mt-1 flex flex-wrap gap-x-2 gap-y-1.5">
                             {item.links.map((link, index) => (
                                 <a
                                     key={index}
