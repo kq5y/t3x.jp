@@ -46,7 +46,7 @@ export default function Home() {
                         <SNSItem
                             link={{
                                 name: "Twitter",
-                                url: "https://twitter.com/tksnnnnnnnnn"
+                                url: "https://twitter.com/tksnnx"
                             }}
                         >
                             <FaXTwitter size={20} />
