@@ -23,6 +23,7 @@ type HistoryItem = {
         name: string;
         url: string;
     }[];
+    future?: boolean;
 };
 
 type WorkItem = {

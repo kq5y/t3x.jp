@@ -19,7 +19,13 @@ function Item(props: ItemProps) {
             </div>
             <div className="flex-1 pb-8 pt-0.5">
                 <p className="text-sm text-gray-500 dark:text-neutral-400">{item.category}</p>
-                <h2 className="flex gap-x-1.5 font-semibold">{item.title}</h2>
+                <h2
+                    className={
+                        "flex gap-x-1.5 font-semibold" + (item.future ? " text-gray-400 dark:text-neutral-500" : "")
+                    }
+                >
+                    {item.title}
+                </h2>
                 {item.description && (
                     <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">{item.description}</p>
                 )}
