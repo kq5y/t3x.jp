@@ -25,7 +25,11 @@ export default function RootLayout({
             <head>
                 <meta charSet="utf-8" />
                 <meta name="description" content="tksnn's Portfolio" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta
+                    name="viewport"
+                    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=3,user-scalable=yes"
+                />
+                <meta name="robots" content="noindex, nofollow" />
             </head>
             <body className={inter.className}>
                 <Providers>
