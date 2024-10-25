@@ -15,9 +15,11 @@ import {
     SiPython,
     SiPytorch,
     SiReact,
+    SiRemix,
     SiScikitlearn,
     SiTypescript,
-    SiUnity
+    SiUnity,
+    SiVuedotjs
 } from "react-icons/si";
 
 function SNSItem(props: { link: LinkItem; children: React.ReactNode }) {
@@ -138,6 +140,14 @@ export default function Home() {
                             <span className="flex items-center gap-2">
                                 <SiNextdotjs />
                                 Next.js
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiRemix />
+                                Remix
+                            </span>
+                            <span className="flex items-center gap-2">
+                                <SiVuedotjs />
+                                Remix
                             </span>
                             <span className="flex items-center gap-2">
                                 <SiElectron />
