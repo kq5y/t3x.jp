@@ -1,19 +1,34 @@
 [
     {
+        "title": "tools",
+        "description": "色々なツールをまとめたもの",
+        "links": [
+            {
+                "name": "Link",
+                "url": "https://tools.t3x.jp"
+            },
+            {
+                "name": "Github",
+                "url": "https://github.com/kq5y/tools"
+            }
+        ],
+        "tags": ["TypeScript", "Remix", "Cloudflare"]
+    },
+    {
         "title": "nicoarch",
         "description": "ニコニコ動画の動画やメタデータ、コメントをアーカイブするツール",
         "links": [
             {
                 "name": "Github",
-                "url": "https://github.com/tksnnx/nicoarch"
+                "url": "https://github.com/kq5y/nicoarch"
             },
             {
                 "name": "GitHub(Frontend)",
-                "url": "https://github.com/tksnnx/nicoarch-app"
+                "url": "https://github.com/kq5y/nicoarch-app"
             },
             {
                 "name": "GitHub(Worker)",
-                "url": "https://github.com/tksnnx/nicoarch-worker"
+                "url": "https://github.com/kq5y/nicoarch-worker"
             }
         ],
         "tags": ["TypeScript", "Remix", "Redis", "MongoDB", "Python", "Docker", "NGINX"]
@@ -28,7 +43,7 @@
             },
             {
                 "name": "GitHub",
-                "url": "https://github.com/tksnnx/next-note"
+                "url": "https://github.com/kq5y/next-note"
             }
         ],
         "tags": ["TypeScript", "Next.js", "PostrageSQL", "Vercel"]
@@ -43,7 +58,7 @@
             },
             {
                 "name": "GitHub",
-                "url": "https://github.com/tksnnx/t3x.jp"
+                "url": "https://github.com/kq5y/t3x.jp"
             }
         ],
         "tags": ["TypeScript", "Next.js", "Cloudflare"]
@@ -58,11 +73,11 @@
             },
             {
                 "name": "GitHub(Frontend)",
-                "url": "https://github.com/tksnnx/titanic-checker-front"
+                "url": "https://github.com/kq5y/titanic-checker-front"
             },
             {
                 "name": "GitHub(Backend)",
-                "url": "https://github.com/tksnnx/titanic-checker-api"
+                "url": "https://github.com/kq5y/titanic-checker-api"
             }
         ],
         "tags": ["TypeScript", "React.js", "Python", "FastAPI", "Cloudflare"]
