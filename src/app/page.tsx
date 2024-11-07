@@ -43,7 +43,10 @@ export default function Home() {
             <div className="rounded-lg bg-[#f5f9ff] p-4 dark:bg-[#0b0e14]">
                 <div className="flex items-center gap-4">
                     <Image priority src="/img/icon.webp" alt="icon" className="rounded-full" width={48} height={48} />
-                    <p className="text-lg font-semibold">tksnn</p>
+                    <div className="flex flex-col">
+                        <p className="text-lg font-semibold">kq5y</p>
+                        <p className="text-gray-400 dark:text-neutral-500">kasi, tksnn</p>
+                    </div>
                     <div className="ml-auto flex flex-wrap justify-end">
                         <SNSItem
                             link={{
@@ -87,6 +90,12 @@ export default function Home() {
                         </SNSItem>
                     </div>
                 </div>
+            </div>
+            <div className="mx-4 my-6">
+                <p>
+                    I&apos;m interested in machine learning, speech synthesis, competitive programming, Capture The
+                    Flag, etc.
+                </p>
             </div>
             <div>
                 <h2 className="my-4 text-2xl font-semibold">Skills</h2>
@@ -147,7 +156,7 @@ export default function Home() {
                             </span>
                             <span className="flex items-center gap-2">
                                 <SiVuedotjs />
-                                Remix
+                                Vue.js
                             </span>
                             <span className="flex items-center gap-2">
                                 <SiElectron />
