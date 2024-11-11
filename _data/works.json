@@ -1,5 +1,20 @@
 [
     {
+        "title": "blog",
+        "description": "記事やメモを公開するブログサイト",
+        "links": [
+            {
+                "name": "Link",
+                "url": "https://blog.t3x.jp"
+            },
+            {
+                "name": "Github",
+                "url": "https://github.com/kq5y/blog"
+            }
+        ],
+        "tags": ["TypeScript", "Astro", "Cloudflare"]
+    },
+    {
         "title": "tools",
         "description": "色々なツールをまとめたもの",
         "links": [
