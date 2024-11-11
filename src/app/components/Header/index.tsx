@@ -62,7 +62,9 @@ export default function Header() {
                         <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-300 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
                     </li>
                     <li className="group relative mb-4">
-                        <Link href="/posts">Posts</Link>
+                        <a href="https://blog.t3x.jp" target="_blank" rel="noopener noreferrer">
+                            Posts
+                        </a>
                         <span className="absolute bottom-0 left-1/2 block h-0.5 w-0 -translate-x-1/2 bg-neutral-900 transition-all duration-300 group-hover:w-full group-hover:max-w-full dark:bg-neutral-100"></span>
                     </li>
                 </ul>
